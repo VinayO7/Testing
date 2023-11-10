@@ -4,9 +4,67 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>thevenay</title>
+	<style type="text/css">
+		.mdiv{
+			height: 100vh;
+			width: 100vw;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			background-image: url("https://images.unsplash.com/photo-1634401609694-f6ac6dd8474b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRpd2FsaXxlbnwwfHwwfHx8MA%3D%3D");
+			background-repeat: no-repeat;
+			background-size: 100%;
+			color: darkmagenta;
+			font-family: Impact;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			border: 10px ghostwhite;
+			align-items: flex-start;
+			-webkit-text-stroke: 0.5px lightcyan;
+		}
+		.name{
+			font-family: Segoe UI Black;
+			color: darkorchid;
+			text-shadow: none;
+			position: relative;
+			top: 35px;
+			padding: 150px;
+
+		}
+		#CornerImage {
+            position: fixed;
+            bottom: 15px;
+            right: 1020px;
+            width: 150px;
+            height: auto;
+            border-radius: 10%;
+            z-index: 10;
+        }
+	</style>
 </head>
 <body>
-	<h1>TESTING NEW FILE</h1>
-
+<div  class="mdiv">
+	<div style="width:900px" align="center">
+		  <img src="C:/Users/vinay/OneDrive/Desktop/por1.png" alt="por1.png" id="CornerImage">
+		<h1>एक दिवा लावु जिजाऊचरणी।<br>
+एक दिवा लावु शिवचरणी।<br>
+एक दिवा लावु शंभुचरणी।<br>
+आमचा इतिहास हीच आमची प्रतिष्ठा<br>
+दिपावलीच्या हार्दिक शिवशुभेच्छा<br>
+आपल्या घरि सुख समाधान सदैव<br>
+नांदो हिच जगदंबेचरणी प्रार्थना॥<br>
+।। जय शिवराय ।।<br>
+तुम्हाला व तुमच्या कुटुंबियांना दिवाळीच्या हार्दिक शुभेच्छा !!<br>
+</h1>
+	<marquee scrollamount="20" behavior="slide" direction="Right"><h2 class="name" id="data">
+	</h2></marquee>
+	</div>
+</div>
+<script type="text/javascript">
+	let name = prompt("Enter your Name")
+	let data = document.getElementById('data');
+	data.innerHTML="Happy Diwali "+name+"..."+" Good Wishes from Vinay"	
+</script>
 </body>
 </html>
